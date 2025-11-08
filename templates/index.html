@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew Wright</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{url_for('static', filename='portfolio_logo_light.svg')}}"
+
+</head>
+<body>
+    <header class="padding flex between items-center">
+        <img src="{{url_for('static', filename='/images/portfolio_logo_light.svg')}}" class="logo"/>
+        <div class="flex items-center gap-4">
+            <a href="">Home</a>
+            <a href="">Projects</a>
+            <a href="">About</a>
+        </div>
+        <a href="" class="link-button">Contact</a>
+    </header>
+</body>
+</html>
