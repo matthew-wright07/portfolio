@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: #222222;
     color: white;
 }
 
@@ -23,6 +23,7 @@ a{
 .logo{
     width: 50px;
     height: 50px;
+    color:#8BA4FF;
 }
 
 .padding{
@@ -50,4 +51,16 @@ a{
     background: #FFFFFF;
     color:black;
     border-radius: 4px;
+    transition: all .5s ease-out;
+}
+.link-button:hover{
+    background-color: #8BA4FF;
+    color:white;
+}
+.link{
+    color:white;
+    transition: all .5s ease-out;
+}
+.link:hover{
+    color: #8BA4FF;
 }
