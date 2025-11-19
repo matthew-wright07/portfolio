@@ -5,18 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matthew Wright</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="icon" href="{{url_for('static', filename='portfolio_logo_light.svg')}}"
+    <link rel="icon" href="{{url_for('static', filename='images/logo_background.svg')}}"
 
 </head>
 <body>
-    <header class="padding flex between items-center">
-        <img src="{{url_for('static', filename='/images/portfolio_logo_light.svg')}}" class="logo"/>
-        <div class="flex items-center gap-4">
-            <a class="link" href="">Home</a>
-            <a class="link" href="">Projects</a>
-            <a class="link" href="">About</a>
+    <div class="gradient-img" id="home">
+        <header class="padding grid grid-cols-3">
+            <a href="#home" class="flex items-center">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" class="logo"/>
+            </a>
+            <div class="flex items-center gap-4 menu">
+                <a class="link" href="#home">Home</a>
+                <a class="link" href="#work">Experience</a>
+                <a class="link" href="#skills">Skills</a>
+                <a class="link" href="#projects">Projects</a>
+            </div>
+            <a href="mailto:matthewjwright07@gmail.com" class="link-button">Contact</a>
+        </header>
+        <div class="padding">
+            <div class="hero-section">
+                <p class="sub-heading">Matthew Wright</p>
+                <h1 class="hero">Hey, Welcome To My Portfolio!</h1>
+                <a href="#work" class="button">Learn More</a>
+            </div>
         </div>
-        <a href="" class="link-button">Contact</a>
-    </header>
+    </div>
+    <div class="work-xp" id="work">
+        <div class="padding flex-col gap-8">
+            <p class="black-header">Experience</p>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="experience">
+                    <p class="black-subheader">AI Made Easier - Frontend Developer Intern</p>
+                    <p class="color-grey">August 2025 - Present</p>
+                    <hr/>
+                    <ul>
+                        <li>Rebuilt the frontend architecture from scratch using Next.js, improving performance and scalability</li>
+                        <li>Translated early-stage concepts into polished UI/UX designs in Figma and implemented them with production-ready code</li>
+                        <li>Developed and integrated API routes to connect the frontend to backend services, ensuring seamless functionality across the application</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <p class="black-subheader">Versus X - Full Stack Developer Intern</p>
+                    <p class="color-grey">August 2025 - Present</p>
+                    <hr/>
+                    <ul>
+                        <li>Collaborated across frontend and backend to optimize end-to-end product functionality and user experience</li>
+                        <li>Enhanced dashboard usability by refining React components and improving UI clarity.</li>
+                        <li>Built and maintained reliable API routes with Express.js and implemented improved error logging for better debugging</li>
+                        <li>Created on-demand graphics using Photoshop and Canva to support product visuals and branding</li>
+                        <li>Shipped incremental updates using Git/GitHub, practicing version control and iterative development</li>
+                    </ul>
+                </div>
+                <div class="experience">
+                    <p class="black-subheader">Freelance - Wix Developer</p>
+                    <p class="color-grey">Novemeber 2024 - August 2025</p>
+                    <hr/>
+                    <ul>
+                        <li>Developed custom client websites on Wix, translating client ideas into functional, user-friendly web pages</li>
+                        <li>Collaborated directly with clients throughout the design and development process, strengthening communication skills and the ability to explain technical concepts clearly</li>
+                        <li>Managed full-site setup, including domain registration via GoDaddy, ensuring seamless deployment and live readiness</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="padding flex-col gap-8">
+            <p class="white-header">Skills</p>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="skills-card flex-col gap-2">
+                    <p class="white-subheader">Frontend</p>
+                    <hr/>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skills-card flex-col gap-2">
+                    <p class="white-subheader">Backend</p>
+                    <hr/>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                        <li>Python</li>
+                        <li>Flask</li>
+                    </ul>
+                </div>
+                <div class="skills-card flex-col gap-2">
+                    <p class="white-subheader">Database</p>
+                    <hr/>
+                    <ul>
+                        <li>SQL</li>
+                        <li>Firebase</li>
+                        <li>Supabase</li>
+                    </ul>
+                </div>
+                <div class="skills-card flex-col gap-2">
+                    <p class="white-subheader">Other</p>
+                    <hr/>
+                    <ul>
+                        <li>Git/GitHub</li>
+                        <li>Figma</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Canva</li>
+                        <li>Capcut</li>
+                        <li>Linux</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="projects" id="projects">
+        <div class="padding flex-col gap-8">
+            <p class="black-header">Projects</p>
+            <div class="grid grid-cols-2 gap-4">
+                <a href="https://webity.io" target="_blank"><img class="project-image" src="/static/images/projects/webity.png"/></a>
+                <a href="https://utilly.io" target="_blank"><img class="project-image" src="/static/images/projects/utilly.png"/></a>
+                <a href="https://mystockproject.com" target="_blank"><img class="project-image" src="/static/images/projects/stock_project.png"/></a>
+                <a href="https://www.figma.com/design/etVXj2auqGAXZQ9azKh23U/AI-Made-Easier?node-id=0-1&t=oMPw59dJwZxiFiOv-1" target="_blank"><img class="project-image" src="/static/images/projects/ai_made_easier.png"/></a>
+                <a href="https://thelegalo.com" target="_blank"><img class="project-image" src="/static/images/projects/legalo.png"/></a>
+                <a href="https://thepinzo.com" target="_blank"><img class="project-image" src="/static/images/projects/pinzo.png"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <footer class="padding grid grid-cols-3">
+            <a href="#home" class="flex items-center">
+                <img src="{{ url_for('static', filename='images/logo.svg') }}" class="logo"/>
+            </a>
+            <div class="flex items-center menu gap-2" id="yay">
+                <p>🎉</p><p>Made By Matthew Wright</p><p class="rotate">🎉</p>
+            </div>
+            <a href="mailto:matthewjwright07@gmail.com" target="_blank" class="link-button">Email Me</a>
+        </footer>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
 </html>
