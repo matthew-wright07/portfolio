@@ -224,7 +224,7 @@ hr{
     height: 300px;
     border-radius: 30px;
     border: 2px black solid;
-    padding: 25px;
+    padding: 12px;
     transition: all .5s ease-out;
 }
 .project-image:hover{
@@ -235,4 +235,43 @@ hr{
 }
 .footer{
     padding: 32px 0px;
+}
+header{
+    grid-template-columns: 1fr 1fr 1fr;
+}
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+@media (max-width: 1200px) {
+    .padding{
+        padding: 40px 40px;
+    }
+    .menu{
+        display: none;
+    }
+    header{
+        grid-template-columns: 1fr 1fr;
+    }
+    .hero{
+        font-size: 50px;
+    }
+    .gradient-img{
+        height: 80vh;
+    }
+    .grid-cols-3{
+        grid-template-columns: 1fr;
+    }
+    .grid-cols-4{
+        grid-template-columns: 1fr;
+    }
+    .grid-cols-2{
+        grid-template-columns: 1fr;
+    }
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
 }
