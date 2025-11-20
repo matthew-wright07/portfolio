@@ -137,17 +137,17 @@ a{
 }
 .black-subheader{
     font-weight: 600;
-    color:black;
+    color: white;
 }
 .experience{
-    border: 2px black solid;
+    background-color: #000000;
     border-radius: 30px;
-    color:black;
+    color:white;
     height: 100%;
     padding: 32px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 16px;
 }
 .flex-col{
     display: flex;
@@ -157,7 +157,7 @@ a{
     gap:32px;
 }
 .color-grey{
-    color:#666666;
+    color: white;
 }
 .experience ul{
     gap:32px;
@@ -191,7 +191,7 @@ hr{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .skills-card{
-    border: 2px #5170ff solid;
+    background-color: #5170ff;
     border-radius: 30px;
     padding: 32px;
     height: 100%;
