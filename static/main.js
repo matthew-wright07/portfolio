@@ -10,3 +10,5 @@ mobile_close.addEventListener("click", ()=>{
 })
 
 
+
+console.log("Hi, I'm Matthew Wright 👋")
