@@ -240,7 +240,6 @@ p{
 .footer-links{
     display: flex;
     gap: 32px;
-
 }
 .footer-link{
     color: var(--color-neutral-600);
