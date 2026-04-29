@@ -331,6 +331,12 @@ p{
     
     .footer{
         padding: 64px 32px;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+    .footer-link{
+        justify-content: space-between;
+        width: 100%;
     }
 
 }
