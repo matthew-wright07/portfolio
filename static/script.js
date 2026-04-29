@@ -2,14 +2,22 @@ const observer = new IntersectionObserver(items=>{
     items.forEach(item=>{
         if (item.isIntersecting){
             item.target.classList.add('show');
-        }else{
-            item.target.classList.remove('show');
         }
     })
 })
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((element) => observer.observe(element));
+
+const headerObserver = new IntersectionObserver(items=>{
+    items.forEach(item=>{
+        if (item.isIntersecting){
+            item.target.classList.add('header-show')
+        }
+    })
+})
+const header = document.querySelector(".header")
+headerObserver.observe(header)
 
 
 const menu = document.querySelector(".menu");

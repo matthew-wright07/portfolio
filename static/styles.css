@@ -247,10 +247,21 @@ p{
 
 .hidden{
     opacity: 0;
+    transform: translateY(32px);
     transition: all 1s ease-in-out;
 }
 .show{
     opacity: 1;
+    transform: translateY(0px);
+}
+.header-hidden{
+    opacity: 0;
+    transform: translateY(-32px);
+    transition: all 1s ease-in-out;
+}
+.header-show{
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 
