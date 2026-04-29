@@ -334,9 +334,8 @@ p{
         flex-direction: column-reverse;
         gap: 32px;
     }
-    .footer-link{
+    .footer-links{
         justify-content: space-between;
-        width: 100%;
     }
 
 }
