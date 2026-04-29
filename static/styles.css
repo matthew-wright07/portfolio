@@ -107,7 +107,7 @@ p{
     gap: 64px;
 }
 .hero-p{
-    width: 600px;
+    width: 300px;
 }
 .hero-work{
     border: var(--color-green-800) 1px solid;
