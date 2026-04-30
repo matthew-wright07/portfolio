@@ -106,9 +106,6 @@ p{
     gap: 64px;
     width: fit-content;
 }
-.hero-p{
-    width: 300px;
-}
 .hero-work{
     border: var(--color-green-800) 1px solid;
     border-radius: 32px;
@@ -229,9 +226,6 @@ p{
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
-.contact-text{
-    width: 600px;
 }
 
 
