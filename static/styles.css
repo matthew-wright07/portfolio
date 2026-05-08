@@ -20,6 +20,15 @@ body{
     margin: 0px;
     font-weight: 600;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 a{
     all: unset;
@@ -347,6 +356,20 @@ p{
     }
     .footer-links{
         justify-content: space-between;
+    }
+
+}
+
+@media screen and (min-width: 2000px){
+    .wrapper{
+        max-width: 2000px;
+    }
+    .scroll{
+        padding: 64px
+    }
+    .scroll-container{
+        border: none;
+        overflow: hidden;
     }
 
 }
