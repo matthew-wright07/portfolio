@@ -24,11 +24,13 @@ body{
     flex-direction: column;
     width: 100vw;
     align-items: center;
+    overflow-x: hidden;
 }
 .wrapper{
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow-x: hidden;
 }
 a{
     all: unset;
@@ -134,7 +136,7 @@ p{
 
 .scroll{
     padding: 64px 0px;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .scroll-container{
     width: 100%;
@@ -369,7 +371,7 @@ p{
     }
     .scroll-container{
         border: none;
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
 }
