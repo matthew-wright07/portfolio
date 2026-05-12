@@ -362,9 +362,9 @@ p{
 
 }
 
-@media screen and (min-width: 2000px){
+@media screen and (min-width: 1920px){
     .wrapper{
-        max-width: 2000px;
+        max-width: 1920px;
     }
     .scroll{
         padding: 64px
