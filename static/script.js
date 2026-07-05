@@ -55,3 +55,8 @@ menu.addEventListener("click", () => {
         menu_content.style.display = "none";
     }
 });
+
+
+const current_year = document.querySelector("#current-year")
+const year = new Date().getFullYear()
+current_year.innerHTML = year
