@@ -15,7 +15,8 @@ This app runs using Flask and all other dependencies can be found in [requiremen
 ## Prerequisites
 
 Python
-Pip or other package manager (ideally)
+
+Pip or other package manager
 
 ## Installation
 
